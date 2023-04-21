@@ -182,7 +182,7 @@ Siehe <<Was nach der Erstellung der Vorlage zu tun ist,Was Sie Ihren Benutzern �
 
 Die Erstellung einer Vorlage für ein Azure NetApp Files Volume erfolgt auf dieselbe Weise wie die Erstellung einer Vorlage für ein Cloud Volumes ONTAP Volume.
 
-Siehe https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes["Wie stellt man Azure NetApp Files Volumes bereit"^] Weitere Informationen zu allen Parametern, die Sie in der ANF-Volumenvorlage ausfüllen müssen.
+Siehe https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes["Wie stellt man Azure NetApp Files Volumes bereit"^] Weitere Informationen zu allen Parametern, die Sie in der ANF-Volumenvorlage ausfüllen müssen.
 
 .Schritte
 . Wählen Sie *Health > Remediation*, klicken Sie auf die Registerkarte *Templates* und klicken Sie auf *Neue Vorlage hinzufügen*.
@@ -695,7 +695,7 @@ image:screenshot_template_replication_policy.png["Ein Screenshot der Seite zur D
 +
 .. Wählen Sie die aus https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["Replizierungsrichtlinie"^] Die Sie verwenden möchten.
 .. Wählen Sie eine einmalige Kopie oder einen regelmäßigen Replikationszeitplan aus.
-.. Aktivieren Sie das Monitoring des Replizierungszustands, wenn der Drift-Bericht den Replikationszustand der SnapMirror-Beziehung sowie die Verzögerungszeit, den Status und die letzte Übertragungszeit einschließen soll. link:task-check-template-compliance.html#replication-health-details-in-the-drift-report["Sehen Sie, wie dies im Drift-Bericht aussieht"].
+.. Aktivieren Sie das Monitoring des Replizierungszustands, wenn der Drift-Bericht den Replikationszustand der SnapMirror-Beziehung sowie die Verzögerungszeit, den Status und die letzte Übertragungszeit einschließen soll. link:task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report["Sehen Sie, wie dies im Drift-Bericht aussieht"].
 .. Wählen Sie aus, ob Sie eine Transferrate-Grenze festlegen möchten, und geben Sie dann die maximale Rate (in Kilobyte pro Sekunde) ein, mit der Daten übertragen werden können. Sie können einen festen Wert eingeben oder Sie können ein Minimum und Maximum angeben und dem Storage Admin den Wert in diesem Bereich auswählen.
 
 

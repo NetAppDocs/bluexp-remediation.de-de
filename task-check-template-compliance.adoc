@@ -87,7 +87,7 @@ Klicken Sie auf, um einen Drift-Bericht für Ressourcen anzuzeigen, die aus Ihre
 
 === Einzelheiten zum Replikationsstatus von BlueXP im Drift-Bericht
 
-Wenn link:task-define-templates.html#add-replication-functionality-to-a-volume["Aktivieren der BlueXP Replizierung auf einem Volume mithilfe von Vorlagen"], Sie können wählen, um ausführlichere Replikationsinformationen in den Drift-Bericht durch die Aktivierung Drift im Feld "Replikation Health Monitoring aktivieren". Wenn aktiviert, zeigt der Drift-Bericht an, ob der Systemzustand der BlueXP Replizierungsbeziehung ordnungsgemäß oder ungesund (drifted) ist, zusammen mit der SnapMirror Verzögerungszeit, dem Status und der letzten Transferzeit.
+Wenn link:task-define-templates.html#add-bluexp-classification-functionality-to-a-volume["Aktivieren der BlueXP Replizierung auf einem Volume mithilfe von Vorlagen"], Sie können wählen, um ausführlichere Replikationsinformationen in den Drift-Bericht durch die Aktivierung Drift im Feld "Replikation Health Monitoring aktivieren". Wenn aktiviert, zeigt der Drift-Bericht an, ob der Systemzustand der BlueXP Replizierungsbeziehung ordnungsgemäß oder ungesund (drifted) ist, zusammen mit der SnapMirror Verzögerungszeit, dem Status und der letzten Transferzeit.
 
 Dieser Screenshot zeigt die Details zur Replizierung für eine SnapMirror Beziehung, die im Drift-Bericht ungesund ist.
 

@@ -156,7 +156,6 @@
   <block id="0723f0287083e700309ab63bd37a0c33" category="section-title">Erstellen einer Vorlage für ein Azure NetApp Files Volume</block>
   <block id="38c68ceb833297ed3631cc6cc44141ab" category="paragraph">Die Erstellung einer Vorlage für ein Azure NetApp Files Volume erfolgt auf dieselbe Weise wie die Erstellung einer Vorlage für ein Cloud Volumes ONTAP Volume.</block>
   <block id="98165316f4a6a7eb3b2eea00a7c71656" category="inline-link">Wie stellt man Azure NetApp Files Volumes bereit</block>
-  <block id="1dcec9f35c7e20c4011388d6173a9a3e" category="paragraph">Siehe<block ref="71642e13367a6341a10e13f459821e6e" category="inline-link-rx"></block> Weitere Informationen zu allen Parametern, die Sie in der ANF-Volumenvorlage ausfüllen müssen.</block>
   <block id="31ea9a5156da1667ca8c913660cb04e8" category="paragraph"><block ref="31ea9a5156da1667ca8c913660cb04e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1198c02b1425b74b6391ffd99cbc74b" category="list-text">Wählen Sie *leere Vorlage* und klicken Sie auf *Start*.</block>
   <block id="ddc839fd59d3af096b5f24caa0aac73e" category="list-text">Wählen Sie *Volumen in Azure NetApp Files* als Ressourcentyp aus, den Sie erstellen möchten, und klicken Sie auf *Anwenden*.</block>
@@ -312,7 +311,6 @@
   <block id="23647b4aee667229f438bac6d37c6f14" category="list-text">Wählen Sie die aus<block ref="fce626f96b8a582bd914af9774e3f4bd" category="inline-link-rx"></block> Die Sie verwenden möchten.</block>
   <block id="28b7ceda6afe52e7cddb056ae1cc1b42" category="list-text">Wählen Sie eine einmalige Kopie oder einen regelmäßigen Replikationszeitplan aus.</block>
   <block id="a890fcd17657bbd0255d609a9ac66f87" category="inline-link-macro">Sehen Sie, wie dies im Drift-Bericht aussieht</block>
-  <block id="550aba8dd2351fcca6220e9726d1b0b4" category="list-text">Aktivieren Sie das Monitoring des Replizierungszustands, wenn der Drift-Bericht den Replikationszustand der SnapMirror-Beziehung sowie die Verzögerungszeit, den Status und die letzte Übertragungszeit einschließen soll. <block ref="e9afe1d61d7f4e2024b782abd0cbb1af" category="inline-link-macro-rx"></block>.</block>
   <block id="a17ec67a32a0998705df91c25c3b8420" category="list-text">Wählen Sie aus, ob Sie eine Transferrate-Grenze festlegen möchten, und geben Sie dann die maximale Rate (in Kilobyte pro Sekunde) ein, mit der Daten übertragen werden können. Sie können einen festen Wert eingeben oder Sie können ein Minimum und Maximum angeben und dem Storage Admin den Wert in diesem Bereich auswählen.</block>
   <block id="e03c4d2a8455ec2482acf1f509382257" category="section-title">Was nach der Erstellung der Vorlage zu tun ist</block>
   <block id="856a9d1850ea33e764f9c6e201455be4" category="paragraph">Nachdem Sie eine Vorlage erstellt haben, sollten Sie Ihre Storage-Administratoren darüber informieren, die Vorlage beim Erstellen neuer Arbeitsumgebungen und Volumes zu verwenden.</block>
@@ -774,7 +772,6 @@
   <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">Einzelheiten zum Replikationsstatus von BlueXP im Drift-Bericht</block>
   <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">Aktivieren der BlueXP Replizierung auf einem Volume mithilfe von Vorlagen</block>
-  <block id="9dd134a3f05a90dc02c4af5ebcb3faef" category="paragraph">Wenn <block ref="079d9da8cb6e56b01a7d0344b4200bdf" category="inline-link-macro-rx"></block>, Sie können wählen, um ausführlichere Replikationsinformationen in den Drift-Bericht durch die Aktivierung Drift im Feld "Replikation Health Monitoring aktivieren". Wenn aktiviert, zeigt der Drift-Bericht an, ob der Systemzustand der BlueXP Replizierungsbeziehung ordnungsgemäß oder ungesund (drifted) ist, zusammen mit der SnapMirror Verzögerungszeit, dem Status und der letzten Transferzeit.</block>
   <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">Der BlueXP Korrekturservice (AppTemplate) ermöglicht Ihnen eine standardisierte Ressourcenerstellung für Ihre BlueXP Arbeitsumgebungen.</block>
   <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">BlueXP Dokumentation zur Problembehebung</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -849,4 +846,7 @@
   <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">BlueXP Problembehebung nutzen</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
   <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">Hinzufügen von Backup-, Klassifizierungs- oder Replikationsfunktionen zu einem Volume</block>
+  <block id="3c66700164b4cb085d6e086bf6b7d73b" category="paragraph">Wenn <block ref="438903b5e6182d9d4cc41396268e5cbc" category="inline-link-macro-rx"></block>, Sie können wählen, um ausführlichere Replikationsinformationen in den Drift-Bericht durch die Aktivierung Drift im Feld "Replikation Health Monitoring aktivieren". Wenn aktiviert, zeigt der Drift-Bericht an, ob der Systemzustand der BlueXP Replizierungsbeziehung ordnungsgemäß oder ungesund (drifted) ist, zusammen mit der SnapMirror Verzögerungszeit, dem Status und der letzten Transferzeit.</block>
+  <block id="c28223c3f7a03804f44448c7561c5f02" category="paragraph">Siehe<block ref="6525ab64efdc6d693874df3da6739f52" category="inline-link-rx"></block> Weitere Informationen zu allen Parametern, die Sie in der ANF-Volumenvorlage ausfüllen müssen.</block>
+  <block id="8abfe8e6c06581937c37ec49be54c6d7" category="list-text">Aktivieren Sie das Monitoring des Replizierungszustands, wenn der Drift-Bericht den Replikationszustand der SnapMirror-Beziehung sowie die Verzögerungszeit, den Status und die letzte Übertragungszeit einschließen soll. <block ref="1eb00ed04881df5d17ae6b01acb7f8fb" category="inline-link-macro-rx"></block>.</block>
 </blocks>
