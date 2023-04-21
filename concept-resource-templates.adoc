@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-resource-templates.html 
 keywords: templates, overview, conceptual, resource templates, application templates, volume templates 
-summary: Mit dem AppTemplate-Dienst können Sie die Erstellung von Ressourcen in Ihren Arbeitsumgebungen in BlueXP standardisieren. Beispielsweise können Sie erforderliche Parameter in einer „Volume-Vorlage“ hartcodieren, die später angewendet werden, wenn ein Storage-Administrator mithilfe der Vorlage ein Volume erstellt. Dazu gehören der erforderliche Festplattentyp, die Größe, das Protokoll, die Snapshot-Richtlinie, der Cloud-Provider, Und vieles mehr. Zudem können Sie für jedes erstellte Volume bestimmte Services wie Cloud Backup aktivieren. 
+summary: Der BlueXP Korrekturservice ermöglicht Ihnen, die Erstellung von Ressourcen in Ihren Arbeitsumgebungen in BlueXP zu standardisieren. Beispielsweise können Sie erforderliche Parameter in einer „Volume-Vorlage“ hartcodieren, die später angewendet werden, wenn ein Storage-Administrator mithilfe der Vorlage ein Volume erstellt. Dazu gehören der erforderliche Festplattentyp, die Größe, das Protokoll, die Snapshot-Richtlinie, der Cloud-Provider, Und vieles mehr. Außerdem können Sie bestimmte Services wie BlueXP Backup und Recovery für jedes erstellte Volume aktivieren. 
 ---
-= Erfahren Sie mehr über AppTemplate
+= Informieren Sie sich über Korrekturmaßnahmen für BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Mit dem AppTemplate-Dienst können Sie die Erstellung von Ressourcen in
 
 
 [role="lead"]
-Mit dem AppTemplate-Service können Sie die Erstellung von Ressourcen in Ihren Arbeitsumgebungen in BlueXP (früher Cloud Manager) standardisieren. Beispielsweise können Sie erforderliche Parameter in einer „Volume-Vorlage“ hartcodieren, die später angewendet werden, wenn ein Storage-Administrator mithilfe der Vorlage ein Volume erstellt. Dazu gehören der erforderliche Festplattentyp, die Größe, das Protokoll, die Snapshot-Richtlinie, der Cloud-Provider, Und vieles mehr. Zudem können Sie für jedes erstellte Volume bestimmte Services wie Cloud Backup aktivieren.
+Der BlueXP Korrekturservice ermöglicht Ihnen, die Erstellung von Ressourcen in Ihren Arbeitsumgebungen in BlueXP zu standardisieren. Beispielsweise können Sie erforderliche Parameter in einer „Volume-Vorlage“ hartcodieren, die später angewendet werden, wenn ein Storage-Administrator mithilfe der Vorlage ein Volume erstellt. Dazu gehören der erforderliche Festplattentyp, die Größe, das Protokoll, die Snapshot-Richtlinie, der Cloud-Provider, Und vieles mehr. Außerdem können Sie bestimmte Services wie BlueXP Backup und Recovery für jedes erstellte Volume aktivieren.
 
 Vorlagen erleichtern Storage-Administratoren die Erstellung von Volumes, die für die Workload-Anforderungen der jeweiligen Applikation optimiert sind, wie Datenbanken, E-Mail oder Streaming-Services. Storage-Architekten wissen, dass jedes Volume für jede Applikation optimal erstellt wird, um das Leben einfacher zu gestalten.
 
@@ -22,10 +22,10 @@ Vorlagen erleichtern Storage-Administratoren die Erstellung von Volumes, die fü
 
 == Funktionen
 
-AppTemplate bietet die folgenden Funktionen und Vorteile:
+Die Problembehebung von BlueXP bietet folgende Funktionen und Vorteile:
 
 * Automatisiert und verbessert das Design und die Entwicklung Ihrer Infrastruktur
-* Sie bietet einen zentralen Speicherort, um verschiedene NetApp Cloud Services zu aktivieren, z. B. Cloud Backup und Cloud Data Sense
+* Verschiedene NetApp Cloud-Services lassen sich über einen zentralen Speicherort aktivieren, zum Beispiel BlueXP Backup und Recovery sowie die BlueXP Klassifizierung
 * Identifiziert geänderte Ressourcen und entspricht nicht mehr der Vorlage (mit der Funktion „Drift“)
 +
 Derzeit müssen Sie manuell Anpassungen vornehmen, um die Ressource wieder mit der Vorlage konform zu machen. link:task-check-template-compliance.html["Erfahren Sie mehr über Drift"].
@@ -49,20 +49,20 @@ Eine Vorlage ist eine Kette von "Aktionen", die einige vordefinierte Werte haben
 
 *Services Aktionen:*
 
-* Aktivieren https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud-Backup"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
-* Aktivieren https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Cloud-Daten Sinnvoll"^] Auf Volumes
-* Aktivieren https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replizierung"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
+* Aktivieren https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP Backup und Recovery"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
+* Aktivieren https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP Klassifizierung"^] Auf Volumes
+* Aktivieren https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP Replizierung"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
 
 
-Sie können beispielsweise eine Vorlage erstellen, die ein Cloud Volumes ONTAP Volume erstellt. Oder es erstellt ein Cloud Volumes ONTAP Volume und ermöglicht dann Cloud Backup auf diesem Volume. Oder dass es ein Cloud Volumes ONTAP Volume erstellt und dann Cloud Backup _und_ Cloud Daten sinnvoll auf diesem Volume ermöglicht.
+Sie können beispielsweise eine Vorlage erstellen, die ein Cloud Volumes ONTAP Volume erstellt. Oder es erstellt ein Cloud Volumes ONTAP Volume und ermöglicht dann BlueXP Backup und Recovery auf diesem Volume. Oder dass dadurch ein Cloud Volumes ONTAP Volume erstellt wird und dann die BlueXP Backup- und Recovery- bzw. BlueXP Klassifizierung für dieses Volume ermöglicht wird.
 
 Weitere Aktionen werden von NetApp im Laufe der Zeit hinzugefügt.
 
 
 
-== Funktionsweise von AppTemplate
+== Funktionsweise der BlueXP Problembehebung
 
-Der AppTemplate-Dienst besteht aus 3 Teilen. Die verfügbare Vorlage „Actions“, die benutzerdefinierte Applikationsvorlage und die implementierte Ressource, aus der die Vorlage ausgeführt wird. Die folgende Abbildung zeigt die Beziehung zwischen den einzelnen Komponenten:
+Der BlueXP Korrekturservice besteht aus 3 Teilen. Die verfügbare Vorlage „Actions“, die benutzerdefinierte Applikationsvorlage und die implementierte Ressource, aus der die Vorlage ausgeführt wird. Die folgende Abbildung zeigt die Beziehung zwischen den einzelnen Komponenten:
 
 image:diagram_template_flow1.png["Ein Diagramm der verschiedenen Benutzer, die an der Erstellung und Nutzung von Anwendungsvorlagen beteiligt sind."]
 
@@ -87,15 +87,15 @@ Sie erstellen beispielsweise ein Volume, das mithilfe der für Datenbanken erste
 
 == Preise und Lizenzen
 
-Die AppTemplate-Funktion erfordert keine Lizenzierung und kann von allen BlueXP-Benutzern verwendet werden.
+Die BlueXP Korrekturfunktion erfordert keine Lizenzierung und kann von allen BlueXP Benutzern kostenlos genutzt werden.
 
 
-NOTE: Vorlagen ermöglichen es Ihnen, einen Cloud-Service auf erstellte Ressourcen anzuwenden, beispielsweise Cloud Backup auf jedem Volume aktivieren. In diesem Fall entstehen Kosten für die Verwendung des Backup-Service und für den von den Backup-Dateien genutzten Objekt-Storage.
+NOTE: Mithilfe von Vorlagen können Sie einen Cloud-Service auf eine erstellte Ressource anwenden, beispielsweise BlueXP Backup und Recovery auf jedes Volume aktivieren. In diesem Fall entstehen Kosten für die Verwendung des Backup-Service und für den von den Backup-Dateien genutzten Objekt-Storage.
 
 
 
 == Einschränkungen
 
-* Der AppTemplate-Dienst wird in keiner der Gov Cloud-Regionen oder auf Websites ohne Internetzugang unterstützt.
+* Der BlueXP Korrekturservice wird in keiner der Gov-Cloud-Regionen oder an Standorten ohne Internetzugang unterstützt.
 * Sie können keine Vorlage zum Erstellen eines Cloud Volumes ONTAP Volumes auf einem vorhandenen Aggregat verwenden. Neue Volumes werden in einem neuen Aggregat erstellt.
 

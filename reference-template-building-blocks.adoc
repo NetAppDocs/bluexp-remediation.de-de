@@ -57,18 +57,18 @@ Wenn Sie beispielsweise „^[A-ZA-Z][0-9a-ZA-Z_]{0,149}€“ als Regex für den
 
 == Werte zwischen Vorlagenaktionen übergeben
 
-Vorlagen können Informationen aus einer früheren Aktion verwenden, um ein Feld in eine zukünftige Aktion einzufügen. Wenn Sie beispielsweise den Namen des Volumes festlegen, für das die Cloud Backup-Funktion aktiviert ist, können Sie die Aktion Backup anweisen, den Wert zu verwenden, den der Storage-Administrator aus der Aktion Cloud Volumes ONTAP erstellen als Name des Volumes eingegeben hat.
+Vorlagen können Informationen aus einer früheren Aktion verwenden, um ein Feld in eine zukünftige Aktion einzufügen. Wenn Sie beispielsweise den Namen des Volumes definieren, für das die BlueXP Backup- und Recovery-Funktion aktiviert sein soll, können Sie die Backup-Aktion anweisen, den Wert zu verwenden, den der Storage-Administrator aus der Aktion Cloud Volumes ONTAP erstellen als Namen des Volumes eingegeben hat.
 
-Der AppTemplate-Dienst kann drei Arten von Informationen nutzen:
+Es gibt drei Arten von Informationen, die der BlueXP Korrekturservice nutzen kann:
 
 * Eingabewert: Dies ist der tatsächliche Wert, den der Storage-Admin in ein Feld in einer früheren Vorlagenaktion eingegeben hat.
 * Ausgabewert: Dieser Wert wird von BlueXP erzeugt, nachdem eine Ressource aus einer früheren Vorlagenaktion erstellt wurde.
 * Geben Sie Ihren eigenen Wert ein – Dies ist ein Wert, den Sie eingeben. Der Zugriff auf diesen Wert erfolgt nicht über eine vorherige Aktion in der Vorlage.
 
 
-Um beispielsweise Compliance-Scans für ein Volume zu ermöglichen, benötigt der Cloud Data Sense Service sowohl den „Volume-Namen“, den der Storage-Administrator eingibt (den Eingabewert), als auch die „Volume UUID“, die BlueXP beim Erstellen des Volumes generiert (der Ausgabewert).
+Um beispielsweise die Compliance-Überprüfung auf einem Volume zu ermöglichen, benötigt der BlueXP Klassifizierungsservice sowohl den vom Storage-Administrator eingegeben „Volume-Namen“ (den Input-Wert) als auch die „Volume-UUID“, die BlueXP beim Erstellen des Volume generiert (den Output-Wert).
 
-Die folgende Abbildung zeigt, wie diese Informationen in den Abschnitt Cloud Data Sense Aktion der Vorlage eingegeben werden.
+In der folgenden Abbildung wird gezeigt, wie diese Informationen in den Abschnitt zur BlueXP Klassifizierungsaktion der Vorlage eingegeben werden.
 
 image:screenshot_template_variable_input_output.png["Eine Abbildung, die zeigt, wie ein in einer vorherigen Aktion eingegebener Wert verwendet wird, um ein Feld in eine andere Aktion zu füllen."]
 
@@ -80,9 +80,9 @@ Die Bedingungen sagen, dass die Vorlage verschiedene Aktionen ausführen kann. D
 
 image:screenshot_template_select_condition.png["Ein Screenshot, wie Sie bedingte Anweisungen in Ihren Vorlagen hinzufügen können."]
 
-Möglicherweise verfügen Sie beispielsweise über eine Richtlinie, die dafür sorgt, dass, wenn ein Volume mit einer Kapazität von mehr als 50 GB Kapazität verfügt, Cloud Backup aktiviert werden muss, auf diesem Volume aktiviert sein muss. Wenn das Volume eine kleinere Kapazität hat, ist Cloud Backup nicht aktiviert. Sie können dies wie unten gezeigt in Ihre Vorlage implementieren.
+Beispielsweise könnte eine Richtlinie vorliegen, dass bei einem Volume mit einer Kapazität von mehr als 50 GB BlueXP Backup und Recovery auf diesem Volume aktiviert werden müssen. Wenn das Volume eine kleinere Kapazität hat, wird BlueXP Backup und Recovery nicht aktiviert. Sie können dies wie unten gezeigt in Ihre Vorlage implementieren.
 
-image:screenshot_template_condition_example.png["Ein Screenshot zeigt, wie Bedingungen in Ihrer Vorlage verwendet werden können, um Cloud Backup bedingt zu aktivieren."]
+image:screenshot_template_condition_example.png["Ein Screenshot, der zeigt, wie in Ihrer Vorlage Bedingungen verwendet werden können, um BlueXP Backup und Recovery bedingungslos zu aktivieren."]
 
 Die Bedingungen bestehen aus zwei Teilen:
 

@@ -14,7 +14,7 @@ summary: Mit BlueXP können Sie Tags auf Ihre vorhandenen Ressourcen anwenden, u
 
 
 [role="lead"]
-Mit BlueXP (früher Cloud Manager) können Sie Tags auf Ihre vorhandenen_ Ressourcen anwenden, um diese Ressourcen zu organisieren und zu verwalten. Tags sind Metadaten, mit denen Sie Ressourcen gruppieren können, um Anwendungen, Umgebungen, Regionen, Abrechnungscodes, Cloud-Provider, Und vieles mehr.
+Mit BlueXP können Sie Tags auf Ihre vorhandenen Ressourcen anwenden, um diese Ressourcen zu organisieren und zu verwalten. Tags sind Metadaten, mit denen Sie Ressourcen gruppieren können, um Anwendungen, Umgebungen, Regionen, Abrechnungscodes, Cloud-Provider, Und vieles mehr.
 
 Tags bestehen aus einem *Tag-Schlüssel* und einem *Tag-Wert*. Sie können beispielsweise einen Tag-Schlüssel namens "Environment" erstellen und dann Tag-Werte von "Production" und "Test" hinzufügen. Nachdem sie auf Ihre Ressourcen angewendet wurden, können Sie schnell nach Ressourcen suchen und diese dem Schlüssel-/Wertepaar entsprechen anzeigen.
 

@@ -34,7 +34,7 @@ image:screenshot_template_drift_on_template.png["Ein Screenshot, in dem gezeigt 
 
 . Storage-Administratoren führen die Vorlage zur Erstellung von Volumes aus.
 . Später bearbeitet ein Storage-Administrator ein Volume und deaktiviert Snapshot Kopien.
-. Sie führen eine Drift-Überprüfung für alle Vorlagen aus, und der AppTemplates-Service vergleicht die Vorlageneinstellung für Snapshot Kopien mit der aktuellen Einstellung im Volume. Alle nicht konformen Werte werden markiert, sodass Sie die falsche Einstellung beheben können.
+. Sie führen eine Driftüberprüfung aller Vorlagen durch und der BlueXP Korrekturservice vergleicht die Vorlageneinstellung für Snapshot Kopien mit der aktuellen Einstellung im Volume. Alle nicht konformen Werte werden markiert, sodass Sie die falsche Einstellung beheben können.
 
 
 
@@ -43,7 +43,7 @@ image:screenshot_template_drift_on_template.png["Ein Screenshot, in dem gezeigt 
 
 Das Drift Dashboard zeigt die Gesamtzahl der Ressourcen (z. B. Volumes) an, die mit Ihren Vorlagen erstellt wurden, die Zahl, die noch mit der Vorlage konform ist, die Nummer, die nicht konform ist (drifted) und die Anzahl, die mit Drift deaktiviert erstellt wurde.
 
-image:screenshot_template_drift_dashboard.png["Ein Screenshot des Drift-Dashboards für den AppTemplates-Service."]
+image:screenshot_template_drift_dashboard.png["Screenshot aus dem Drift Dashboard für den BlueXP Korrekturservice"]
 
 * Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.
 * Der image:screenshot_plus_icon.gif[""] Ermöglicht die Filterung der Ergebnisse nach Vorlagenname, Drift Policy & Status und Aktionstyp. Beispiel:
@@ -85,9 +85,9 @@ Klicken Sie auf, um einen Drift-Bericht für Ressourcen anzuzeigen, die aus Ihre
 
 
 
-=== Integritätsdetails der Replikation im Drift-Bericht
+=== Einzelheiten zum Replikationsstatus von BlueXP im Drift-Bericht
 
-Wenn link:task-define-templates.html#add-replication-functionality-to-a-volume["Aktivieren der Replikation auf einem Volume mithilfe von Vorlagen"], Sie können wählen, um ausführlichere Replikationsinformationen in den Drift-Bericht durch die Aktivierung Drift im Feld "Replikation Health Monitoring aktivieren". Wenn diese Option aktiviert ist, zeigt der Drift-Bericht, ob der Zustand der Replikationsbeziehung gesund oder ungesund (driftet) zusammen mit der SnapMirror-Verzögerungszeit, dem Status und der letzten Übertragungszeit ist.
+Wenn link:task-define-templates.html#add-replication-functionality-to-a-volume["Aktivieren der BlueXP Replizierung auf einem Volume mithilfe von Vorlagen"], Sie können wählen, um ausführlichere Replikationsinformationen in den Drift-Bericht durch die Aktivierung Drift im Feld "Replikation Health Monitoring aktivieren". Wenn aktiviert, zeigt der Drift-Bericht an, ob der Systemzustand der BlueXP Replizierungsbeziehung ordnungsgemäß oder ungesund (drifted) ist, zusammen mit der SnapMirror Verzögerungszeit, dem Status und der letzten Transferzeit.
 
 Dieser Screenshot zeigt die Details zur Replizierung für eine SnapMirror Beziehung, die im Drift-Bericht ungesund ist.
 
