@@ -49,9 +49,9 @@ Eine Vorlage ist eine Kette von "Aktionen", die einige vordefinierte Werte haben
 
 *Services Aktionen:*
 
-* Aktivieren https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP Backup und Recovery"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
-* Aktivieren https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP Klassifizierung"^] Auf Volumes
-* Aktivieren https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP Replizierung"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
+* Aktivieren https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP Backup und Recovery"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
+* Aktivieren https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP Klassifizierung"^] Auf Volumes
+* Aktivieren https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXP Replizierung"^] Auf Volumes (nicht zutreffend für Azure NetApp Files)
 
 
 Sie können beispielsweise eine Vorlage erstellen, die ein Cloud Volumes ONTAP Volume erstellt. Oder es erstellt ein Cloud Volumes ONTAP Volume und ermöglicht dann BlueXP Backup und Recovery auf diesem Volume. Oder dass dadurch ein Cloud Volumes ONTAP Volume erstellt wird und dann die BlueXP Backup- und Recovery- bzw. BlueXP Klassifizierung für dieses Volume ermöglicht wird.
